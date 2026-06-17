@@ -6,6 +6,7 @@ import Hero from "@/components/Hero";
 import Feature from "@/components/Feature";
 import CallTOAction from "@/components/sections/CallToAction";
 import Faqs from "@/components/sections/Faqs";
+import FooterPricing from "@/components/sections/FooterPricing";
 
 export default function Home() {
   return (
@@ -36,6 +37,7 @@ export default function Home() {
 
       <CallTOAction/>
       <Faqs/>
+      <FooterPricing/>
       <Footer />
       <ScrollToTop />
     </>
