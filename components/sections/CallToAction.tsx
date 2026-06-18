@@ -117,8 +117,8 @@ const CallTOAction = () => {
               width="1133.82"
               height="805.822"
               filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB">
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              colorInterpolationFilters="sRGB">
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feColorMatrix
                 in="SourceAlpha"
                 type="matrix"
@@ -150,8 +150,8 @@ const CallTOAction = () => {
               width="1133.82"
               height="805.822"
               filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB">
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              colorInterpolationFilters="sRGB">
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feColorMatrix
                 in="SourceAlpha"
                 type="matrix"
@@ -193,8 +193,8 @@ const CallTOAction = () => {
               x2="-179.477"
               y2="1435.92"
               gradientUnits="userSpaceOnUse">
-              <stop stop-color="#5799EB" />
-              <stop offset="1" stop-color="#9F74FB" />
+              <stop stopColor="#5799EB" />
+              <stop offset="1" stopColor="#9F74FB" />
             </linearGradient>
             <linearGradient
               id="paint1_linear_1_271"
@@ -203,8 +203,8 @@ const CallTOAction = () => {
               x2="-179.477"
               y2="1435.92"
               gradientUnits="userSpaceOnUse">
-              <stop stop-color="#5799EB" />
-              <stop offset="1" stop-color="#9F74FB" />
+              <stop stopColor="#5799EB" />
+              <stop offset="1" stopColor="#9F74FB" />
             </linearGradient>
             <linearGradient
               id="paint2_linear_1_271"
@@ -213,8 +213,8 @@ const CallTOAction = () => {
               x2="293.921"
               y2="114.893"
               gradientUnits="userSpaceOnUse">
-              <stop stop-color="#FFED43" />
-              <stop offset="1" stop-color="#F29939" />
+              <stop stopColor="#FFED43" />
+              <stop offset="1" stopColor="#F29939" />
             </linearGradient>
             <linearGradient
               id="paint3_linear_1_271"
@@ -223,8 +223,8 @@ const CallTOAction = () => {
               x2="1136.92"
               y2="577.904"
               gradientUnits="userSpaceOnUse">
-              <stop stop-color="#52B4DA" />
-              <stop offset="1" stop-color="#1E3E85" />
+              <stop stopColor="#52B4DA" />
+              <stop offset="1" stopColor="#1E3E85" />
             </linearGradient>
             <image
               id="image0_1_271"
@@ -274,9 +274,9 @@ const CallTOAction = () => {
                         width="26.5312"
                         height="19.4534"
                         filterUnits="userSpaceOnUse"
-                        color-interpolation-filters="sRGB">
+                        colorInterpolationFilters="sRGB">
                         <feFlood
-                          flood-opacity="0"
+                          floodOpacity="0"
                           result="BackgroundImageFix"
                         />
                         <feColorMatrix

@@ -20,7 +20,7 @@ const CardPrice = ({
           </h4>
           <h5 className="font-medium text-2xl text-[#11142D65]">{packagee}</h5>
           {premium ? (
-            <div className="absolute -top-4 left-2.5 ">
+            <div className="absolute -top-4 w-full flex justify-center ">
               <div className="flex gap-3 font-semibold text-center justify-center align-middle items-center py-1 pl-1 pr-4 rounded-full bg-[#C2EEFF]">
                 <span className="pt-1.5 px-2.5 pb-0.5 bg-white rounded-full">
                   <Image
@@ -60,8 +60,8 @@ const CardPrice = ({
                           y1="0%"
                           x2="86%"
                           y2="100%">
-                          <stop offset="5.63%" stop-color="#52B4DA" />
-                          <stop offset="100%" stop-color="#1E3E85" />
+                          <stop offset="5.63%" stopColor="#52B4DA" />
+                          <stop offset="100%" stopColor="#1E3E85" />
                         </linearGradient>
                       </defs>
 
@@ -75,9 +75,9 @@ const CardPrice = ({
                       <path
                         d="M7 12.5l3.5 3.5 6-7"
                         stroke="white"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                       />
                     </svg>
                   ) : (

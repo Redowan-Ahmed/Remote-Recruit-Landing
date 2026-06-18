@@ -55,8 +55,8 @@ const Footer = () => {
             x2="-118.041"
             y2="-848.398"
             gradientUnits="userSpaceOnUse">
-            <stop stop-color="#52B4DA" />
-            <stop offset="1" stop-color="#377999" />
+            <stop stopColor="#52B4DA" />
+            <stop offset="1" stopColor="#377999" />
           </linearGradient>
           <linearGradient
             id="paint1_linear_2827_2"
@@ -65,8 +65,8 @@ const Footer = () => {
             x2="-118.041"
             y2="-844.398"
             gradientUnits="userSpaceOnUse">
-            <stop stop-color="#336DA6" />
-            <stop offset="1" stop-color="#1E3E85" />
+            <stop stopColor="#336DA6" />
+            <stop offset="1" stopColor="#1E3E85" />
           </linearGradient>
         </defs>
       </svg>
@@ -89,8 +89,8 @@ const Footer = () => {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
                   d="M1.63133 14.6667V8.956H0V5.69267H1.63133V4.07867C1.63133 1.826 3.45733 0 5.71067 0H8.158V3.26333H6.52667C5.62467 3.26333 4.89467 3.99333 4.89467 4.89467V5.69267H8.158L7.342 8.956H4.89467V14.6667H1.63133Z"
                   fill="#DFE1F2"
                 />
@@ -151,8 +151,8 @@ const Footer = () => {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
                   d="M4.99631 2.20004V3.33138C5.98395 1.36528 9.86689 1.33195 9.99823 4.18142L10.0016 4.33138V9.33138L7.99698 9.33271V5.33204C7.99698 2.55542 5.10597 3.31046 4.99932 5.22869L4.99631 5.33071V9.33271H3.00098V2.20004H4.99631V3.33138V2.20004ZM1.99533 2.33008V9.33141H0V2.33008H1.99533ZM1.00013 0C1.55147 0 1.99813 0.446667 1.99813 0.998C1.99813 1.54867 1.55147 1.99533 1.00013 1.99533C0.449467 1.99533 0.0028 1.54867 0.0028 0.998C0.0028 0.446667 0.449467 0 1.00013 0Z"
                   fill="#DFE1F2"
                 />
