@@ -83,7 +83,7 @@ const Footer = () => {
             />
           </div>
           <div className="flex flex-wrap gap-2.5 align-bottom items-center justify-center">
-            <Link href={"/"} className="py-2 px-2 rounded-full social-media-bg">
+            <Link href={"/"} className="py-2 px-2 rounded-full social-media-bg transition-transform duration-200 hover:scale-110">
               <svg
                 width="15"
                 height="15"
@@ -98,7 +98,7 @@ const Footer = () => {
                 />
               </svg>
             </Link>
-            <Link href={"/"} className="py-2 px-2 rounded-full social-media-bg">
+            <Link href={"/"} className="py-2 px-2 rounded-full social-media-bg transition-transform duration-200 hover:scale-110">
               <svg
                 width="15"
                 height="15"
@@ -119,7 +119,7 @@ const Footer = () => {
                 />
               </svg>
             </Link>
-            <Link href={"/"} className="py-2 px-2 rounded-full social-media-bg">
+            <Link href={"/"} className="py-2 px-2 rounded-full social-media-bg transition-transform duration-200 hover:scale-110">
               <svg
                 width="15"
                 height="15"
@@ -132,7 +132,7 @@ const Footer = () => {
                 />
               </svg>
             </Link>
-            <Link href={"/"} className="py-2 px-2 rounded-full social-media-bg">
+            <Link href={"/"} className="py-2 px-2 rounded-full social-media-bg transition-transform duration-200 hover:scale-110">
               <svg
                 width="15"
                 height="15"
@@ -145,7 +145,7 @@ const Footer = () => {
                 />
               </svg>
             </Link>
-            <Link href={"/"} className="py-2 px-2 rounded-full social-media-bg">
+            <Link href={"/"} className="py-2 px-2 rounded-full social-media-bg transition-transform duration-200 hover:scale-110">
               <svg
                 width="15"
                 height="15"
@@ -160,7 +160,7 @@ const Footer = () => {
                 />
               </svg>
             </Link>
-            <Link href={"/"} className="py-2 px-2 rounded-full social-media-bg">
+            <Link href={"/"} className="py-2 px-2 rounded-full social-media-bg transition-transform duration-200 hover:scale-110">
               <svg
                 width="15"
                 height="15"

@@ -1,6 +1,11 @@
+"use client";
+
 import React from "react";
+import { motion, useReducedMotion } from "motion/react";
 
 const Hero = () => {
+  const prefersReducedMotion = useReducedMotion();
+
   return (
     <section className="relative min-h-125 overflow-x-hidden">
       <div>
@@ -37,21 +42,25 @@ const Hero = () => {
               />
             </mask>
             <g mask="url(#mask0_1_316)">
-              <circle
+              <motion.circle
                 id="Bottom Elipses"
                 opacity="0.05"
                 cx="2682"
                 cy="1902"
                 r="786"
                 fill="white"
+                animate={prefersReducedMotion ? {} : { cy: [1902, 1875, 1902], cx: [2682, 2695, 2682] }}
+                transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
               />
-              <circle
+              <motion.circle
                 id="Top Elipses"
                 opacity="0.02"
                 cx="768"
                 cy="-315"
                 r="786"
                 fill="white"
+                animate={prefersReducedMotion ? {} : { cy: [-315, -335, -315], cx: [768, 778, 768] }}
+                transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
               />
             </g>
           </g>

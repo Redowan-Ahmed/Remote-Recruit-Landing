@@ -1,6 +1,11 @@
+"use client";
+
 import Link from "next/link";
+import { motion, useReducedMotion } from "motion/react";
 
 const CallTOAction = () => {
+  const prefersReducedMotion = useReducedMotion();
+
   return (
     <section>
       <div className="relative min-h-96 overflow-x-hidden">
@@ -34,7 +39,15 @@ const CallTOAction = () => {
           </mask>
           <g mask="url(#mask0_1_271)">
             <circle cx="206.5" cy="600.5" r="43.5" fill="#19CDB8" />
-            <circle opacity="0.3" cx="1358" cy="52" r="190" fill="white" />
+            <motion.circle
+              opacity="0.3"
+              cx="1358"
+              cy="52"
+              r="190"
+              fill="white"
+              animate={prefersReducedMotion ? {} : { cy: [52, 38, 52], cx: [1358, 1366, 1358] }}
+              transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+            />
             <circle
               opacity="0.3"
               cx="543.5"
@@ -98,17 +111,21 @@ const CallTOAction = () => {
               />
             </g>
           </g>
-          <circle
+          <motion.circle
             cx="289.5"
             cy="57.5"
             r="26.5"
             fill="url(#paint2_linear_1_271)"
+            animate={prefersReducedMotion ? {} : { cy: [57.5, 42, 57.5], cx: [289.5, 296, 289.5] }}
+            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
           />
-          <circle
+          <motion.circle
             cx="1134.5"
             cy="546.5"
             r="14.5"
             fill="url(#paint3_linear_1_271)"
+            animate={prefersReducedMotion ? {} : { cy: [546.5, 532, 546.5], cx: [1134.5, 1143, 1134.5] }}
+            transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
           />
           <defs>
             <filter
@@ -237,10 +254,16 @@ const CallTOAction = () => {
           </defs>
         </svg>
 
-        <div className="absolute container flex flex-col lg:flex-row gap-8 lg:gap-20 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-4 sm:px-6">
+        <motion.div
+          className="absolute container flex flex-col lg:flex-row gap-8 lg:gap-20 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-4 sm:px-6"
+          initial={prefersReducedMotion ? {} : { opacity: 0, scale: 0.95 }}
+          whileInView={prefersReducedMotion ? {} : { opacity: 1, scale: 1 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+        >
           <div className="hidden lg:block flex-1/2"></div>
           <div className="flex-1/2">
-            <div className="max-w-full lg:max-w-3/4 text-center lg:text-left  backdrop-blur-sm lg:backdrop-blur-none p-5 lg:p-0 rounded-2xl shadow-2xl lg:shadow-none ">
+            <div className="max-w-full lg:max-w-3/4 text-center lg:text-left  backdrop-blur-md lg:backdrop-blur-none p-5 lg:p-0 rounded-2xl shadow-2xl lg:shadow-none ">
               <h4 className="text-[#1E3E85] font-semibold mb-2.5">
                 Are you ready?
               </h4>
@@ -252,9 +275,9 @@ const CallTOAction = () => {
               </p>
               <Link
                 href={"/"}
-                className="inline-flex gap-2.5 items-center text-[#1E3E85] bg-[#52B4DA]/16 rounded-full py-2 pl-2.5 pr-5 font-medium">
+                className="group inline-flex gap-2.5 items-center text-[#1E3E85] bg-[#52B4DA]/16 rounded-full py-2 pl-2.5 pr-5 font-medium transition-all duration-200 hover:scale-105 shadow-md hover:shadow-lg">
                 {" "}
-                <span className="py-3.5 px-2.5 bg-[#52B4DA] rounded-full">
+                <span className="py-3.5 px-2.5 bg-[#52B4DA] rounded-full transition-transform duration-200 group-hover:-translate-x-1">
                   <svg
                     width="27"
                     height="20"
@@ -311,7 +334,7 @@ const CallTOAction = () => {
               </Link>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

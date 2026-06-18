@@ -103,10 +103,10 @@ const CardPrice = ({
       <div className="text-center block">
         {
           !premium? (
-              <Link className="gradient-link-rounded rounded-3xl p-5 block text-xl font-semibold text-[#1E3E85]" href={buttonUrl}>{buttonName}</Link>
+              <Link className="gradient-link-rounded rounded-3xl p-5 block text-xl font-semibold text-[#1E3E85] transition-all duration-200 hover:shadow-xl hover:-translate-y-0.5" href={buttonUrl}>{buttonName}</Link>
           ):
           (
-            <Link className="premium-price-button rounded-3xl p-5 block text-xl font-semibold text-white shadow-[#3159D347] shadow-2xl" href={buttonUrl}>{buttonName}</Link>     
+            <Link className="premium-price-button rounded-3xl p-5 block text-xl font-semibold text-white shadow-[#3159D347] shadow-2xl transition-all duration-200 hover:shadow-xl hover:-translate-y-0.5" href={buttonUrl}>{buttonName}</Link>     
           )
         }
         

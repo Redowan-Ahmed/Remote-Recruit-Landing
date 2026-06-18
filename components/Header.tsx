@@ -28,7 +28,7 @@ const Header = () => {
           </Link>
 
           <button
-            className="lg:hidden text-white p-2 relative z-50"
+            className="lg:hidden text-white p-2 relative z-50 transition-transform duration-200 hover:scale-110"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
@@ -51,10 +51,10 @@ const Header = () => {
           <nav className="hidden lg:block">
             <ul className="flex flex-row gap-8 items-center text-white font-semibold text-sm">
               <li>
-                <Link href={"/"}>Sign In</Link>
+                <Link href={"/"} className="transition-colors duration-200 hover:text-[#52B4DA]">Sign In</Link>
               </li>
               <li>
-                <Link href={"/"} className="block bg-primary-button py-2.5 px-4 rounded-2xl">
+                <Link href={"/"} className="block bg-primary-button py-2.5 px-4 rounded-2xl transition-all duration-200 hover:opacity-90">
                   Sign Up
                 </Link>
               </li>
@@ -84,14 +84,14 @@ const Header = () => {
               <div className="flex flex-col pt-28 px-8 gap-6">
                 <Link
                   href={"/"}
-                  className="block py-3 text-white text-center font-semibold text-lg border-b border-white/20"
+                  className="block py-3 text-white text-center font-semibold text-lg border-b border-white/20 transition-all duration-200 hover:text-[#52B4DA] hover:translate-x-1"
                   onClick={() => setIsOpen(false)}
                 >
                   Sign In
                 </Link>
                 <Link
                   href={"/"}
-                  className="block bg-primary-button py-3 px-6 rounded-2xl text-center text-white font-semibold text-lg"
+                  className="block bg-primary-button py-3 px-6 rounded-2xl text-center text-white font-semibold text-lg transition-all duration-200 hover:opacity-90"
                   onClick={() => setIsOpen(false)}
                 >
                   Sign Up

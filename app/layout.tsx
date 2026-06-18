@@ -23,7 +23,7 @@ export default function RootLayout({
       lang="en"
       className={`${poppins.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col antialiased">{children}</body>
+      <body className="min-h-full flex flex-col antialiased overflow-x-hidden" data-new-gr-c-s-check-loaded="14.1304.0" data-gr-ext-installed="">{children}</body>
     </html>
   );
 }
