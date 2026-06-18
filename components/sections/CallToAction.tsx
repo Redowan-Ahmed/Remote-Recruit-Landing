@@ -3,10 +3,11 @@ import Link from "next/link";
 const CallTOAction = () => {
   return (
     <section>
-      <div className="relative">
+      <div className="relative min-h-96 overflow-x-hidden">
         <svg
           viewBox="0 0 1440 610"
           fill="none"
+          className="min-h-96"
           xmlns="http://www.w3.org/2000/svg"
           xlinkHref="http://www.w3.org/1999/xlink">
           <rect
@@ -236,17 +237,17 @@ const CallTOAction = () => {
           </defs>
         </svg>
 
-        <div className="absolute container flex flex-row gap-20 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-          <div className="flex-1/2"></div>
-          <div className="flex-1/2 ">
-            <div className="max-w-full md:max-w-3/4">
+        <div className="absolute container flex flex-col lg:flex-row gap-8 lg:gap-20 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-4 sm:px-6">
+          <div className="hidden lg:block flex-1/2"></div>
+          <div className="flex-1/2">
+            <div className="max-w-full lg:max-w-3/4 text-center lg:text-left  backdrop-blur-sm lg:backdrop-blur-none p-5 lg:p-0 rounded-2xl shadow-2xl lg:shadow-none ">
               <h4 className="text-[#1E3E85] font-semibold mb-2.5">
                 Are you ready?
               </h4>
-              <h2 className="text-5xl font-semibold mb-6 leading-14">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 leading-10 sm:leading-12 lg:leading-14">
                 Help is only a few clicks away!
               </h2>
-              <p className="mb-8 text-[#767784] font-normal text-[1.125rem] w-9/12">
+              <p className="mb-8 text-[#767784] font-normal text-sm sm:text-base lg:text-[1.125rem] w-full lg:w-9/12">
                 Click Below to get set up super quickly and find help now!
               </p>
               <Link

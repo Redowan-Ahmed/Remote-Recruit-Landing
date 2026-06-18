@@ -3,8 +3,9 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="relative">
+    <div className="relative overflow-x-hidden min-h-96">
       <svg
+      className="min-h-96"
         viewBox="0 0 1440 569"
         fill="none"
         xmlns="http://www.w3.org/2000/svg">
@@ -71,16 +72,17 @@ const Footer = () => {
         </defs>
       </svg>
       <div className="absolute bottom-0 w-full z-0">
-        <div className="flex justify-between container mx-auto py-24">
+        <div className="flex flex-col sm:flex-row justify-between items-center sm:items-start container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-24 gap-6 sm:gap-0">
           <div>
             <Image
               src={"/images/RemoteRecruit Logo.png"}
               width={180}
               height={74}
               alt="Remote Recruit"
+              className="w-32 sm:w-40 lg:w-auto"
             />
           </div>
-          <div className="flex gap-2.5 align-bottom items-center justify-center">
+          <div className="flex flex-wrap gap-2.5 align-bottom items-center justify-center">
             <Link href={"/"} className="py-2 px-2 rounded-full social-media-bg">
               <svg
                 width="15"

@@ -11,14 +11,14 @@ const CardPrice = ({
   premium = false,
 }: PricingCardProps) => {
   return (
-    <div className="p-8 shadow-2xl shadow-[#3159D31F] rounded-3xl space-y-7 flex flex-col justify-between h-full bg-white">
-      <div className="grid grid-cols-5 gap-8">
-        <div className="bg-[#ECF2FF] flex-col place-content-center items-center text-center col-span-2 rounded-2xl relative">
+    <div className="p-4 sm:p-6 lg:p-8 shadow-2xl shadow-[#3159D31F] rounded-3xl space-y-5 sm:space-y-7 flex flex-col justify-between h-full bg-white">
+      <div className="grid grid-cols-1 sm:grid-cols-5 gap-4 sm:gap-6 lg:gap-8">
+        <div className="bg-[#ECF2FF] flex-col place-content-center items-center text-center sm:col-span-2 rounded-2xl relative py-4 sm:py-0 min-h-36">
           <h4
-            className={`${premium ? "text-gradient" : "text-[#52B4DA]"} text-3xl font-semibold`}>
+            className={`${premium ? "text-gradient" : "text-[#52B4DA]"} text-2xl sm:text-3xl font-semibold`}>
             {price}
           </h4>
-          <h5 className="font-medium text-2xl text-[#11142D65]">{packagee}</h5>
+          <h5 className="font-medium text-xl sm:text-2xl text-[#11142D65]">{packagee}</h5>
           {premium ? (
             <div className="absolute -top-4 w-full flex justify-center ">
               <div className="flex gap-3 font-semibold text-center justify-center align-middle items-center py-1 pl-1 pr-4 rounded-full bg-[#C2EEFF]">
@@ -39,8 +39,8 @@ const CardPrice = ({
           )}
         </div>
 
-        <div className="col-span-3">
-          <ul className="space-y-5">
+        <div className="sm:col-span-3">
+          <ul className="space-y-3 sm:space-y-5">
             {pricingList.map((list) => (
               <li
                 key={list.info}

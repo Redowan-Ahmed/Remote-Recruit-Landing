@@ -13,7 +13,7 @@ export default function Home() {
     <>
       <Header />
       <Hero />
-      <div className="container mx-auto mt-24 space-y-24">
+      <div className="container mx-auto mt-12 sm:mt-16 lg:mt-24 space-y-12 sm:space-y-16 lg:space-y-24">
         <Feature
           badge="Global Reach"
           title="The First Fully Global Job Board, Anywhere, Ever"

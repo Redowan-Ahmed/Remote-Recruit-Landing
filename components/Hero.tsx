@@ -2,11 +2,12 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="relative">
+    <section className="relative min-h-125 overflow-x-hidden">
       <div>
         <svg
           viewBox="0 0 4320 2112"
           fill="none"
+          className="min-h-125"
           xmlns="http://www.w3.org/2000/svg">
           <g id="Background">
             <path
@@ -79,13 +80,13 @@ const Hero = () => {
         </svg>
       </div>
 
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center w-full ">
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center w-full px-4 sm:px-6 lg:px-8">
         <div className="flex-col justify-items-center space-y-4">
-          <h1 className="font-bold text-6xl text-white">
+          <h1 className="font-bold text-3xl sm:text-4xl lg:text-6xl text-white">
             RemoteRecruit’s Difference
           </h1>
-          <div className="w-3/5 max-w-11/12 text-center">
-            <p className="font-medium text-xl text-white leading-8">
+          <div className="w-11/12 sm:w-4/5 lg:w-3/5 text-center">
+            <p className="font-medium text-sm sm:text-base lg:text-xl text-white leading-6 sm:leading-7 lg:leading-8">
               RemoteRecruit is connecting the world with an easy-to-use platform
               that lets full-time, part-time, and freelance workers showcase
               their talents to businesses that need them. With no paywalls, no
